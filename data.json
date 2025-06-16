@@ -1,0 +1,984 @@
+[
+  {
+    "symptom": "Cold hands and feet",
+    "diagnosis": "Poor Circulation",
+    "solution": "Keep warm, exercise regularly, avoid smoking, and consult a doctor if symptoms persist.",
+    "doctors": [
+      {
+        "name": "Dr. Ramesh Sharma",
+        "specialization": "General Physician",
+        "clinic": "Sharma Health Clinic",
+        "contact": "080-12345678",
+        "address": "12 MG Road, Bengaluru, Karnataka",
+        "lat": 12.9716,
+        "lon": 77.5946
+      },
+      {
+        "name": "Dr. Vivek Patil",
+        "specialization": "Cardiologist",
+        "clinic": "Heart Care Hospital",
+        "contact": "080-23456789",
+        "address": "45 Koramangala, Bengaluru, Karnataka",
+        "lat": 12.9352,
+        "lon": 77.6142
+      }
+    ]
+  },
+  {
+    "symptom": "Fever, cough, sore throat",
+    "diagnosis": "Viral Infection",
+    "solution": "Rest well, drink plenty of fluids, take paracetamol for fever, and consult a doctor if symptoms worsen.",
+    "doctors": [
+      {
+        "name": "Dr. Vivek Patil",
+        "specialization": "General Physician",
+        "clinic": "Heart Care Hospital",
+        "contact": "080-23456789",
+        "address": "45 Koramangala, Bengaluru, Karnataka",
+        "lat": 12.9352,
+        "lon": 77.6142
+      },
+      {
+        "name": "Dr. Ajay Kumar",
+        "specialization": "Neurologist",
+        "clinic": "Brain & Spine Center",
+        "contact": "080-98765432",
+        "address": "Koramangala, Bengaluru, Karnataka",
+        "lat": 12.9332,
+        "lon": 77.6150
+      }
+    ]
+  },
+  {
+    "symptom": "Headache, nausea, sensitivity to light",
+    "diagnosis": "Migraine",
+    "solution": "Rest in a quiet dark room, take prescribed medications, stay hydrated, and avoid known triggers.",
+    "doctors": [
+      {
+        "name": "Dr. Kavita Rao",
+        "specialization": "Neurologist",
+        "clinic": "Neuro Care Center",
+        "contact": "080-34567890",
+        "address": "5 Indiranagar, Bengaluru, Karnataka",
+        "lat": 12.9718,
+        "lon": 77.6413
+      }
+    ]
+  },
+  {
+    "symptom": "Chest pain, shortness of breath",
+    "diagnosis": "Angina",
+    "solution": "Avoid heavy exertion, take prescribed medications, and consult a cardiologist immediately.",
+    "doctors": [
+      {
+        "name": "Dr. Rajesh Kumar",
+        "specialization": "Cardiologist",
+        "clinic": "City Heart Hospital",
+        "contact": "080-45678901",
+        "address": "MG Road, Bengaluru, Karnataka",
+        "lat": 12.9753,
+        "lon": 77.6051
+      }
+    ]
+  },
+  {
+    "symptom": "Abdominal pain, diarrhea",
+    "diagnosis": "Gastroenteritis",
+    "solution": "Stay hydrated, avoid dairy and spicy foods, take anti-diarrheal medications, and consult if severe.",
+    "doctors": [
+      {
+        "name": "Dr. Neha Singh",
+        "specialization": "Gastroenterologist",
+        "clinic": "Digestive Health Clinic",
+        "contact": "080-56789012",
+        "address": "Jayanagar, Bengaluru, Karnataka",
+        "lat": 12.9250,
+        "lon": 77.5938
+      }
+    ]
+  },
+  {
+    "symptom": "Joint pain and swelling",
+    "diagnosis": "Arthritis",
+    "solution": "Take anti-inflammatory medications, apply warm/cold compresses, maintain gentle exercise, and consult a rheumatologist.",
+    "doctors": [
+      {
+        "name": "Dr. Anil Mehta",
+        "specialization": "Rheumatologist",
+        "clinic": "Joint Care Clinic",
+        "contact": "080-67890123",
+        "address": "HSR Layout, Bengaluru, Karnataka",
+        "lat": 12.9114,
+        "lon": 77.6413
+      }
+    ]
+  },
+  {
+    "symptom": "Fatigue, pale skin",
+    "diagnosis": "Anemia",
+    "solution": "Increase iron-rich foods intake, take supplements if prescribed, and consult a physician for tests.",
+    "doctors": [
+      {
+        "name": "Dr. Priya Nair",
+        "specialization": "General Physician",
+        "clinic": "Health First Clinic",
+        "contact": "080-78901234",
+        "address": "Whitefield, Bengaluru, Karnataka",
+        "lat": 12.9719,
+        "lon": 77.7499
+      }
+    ]
+  },
+  {
+    "symptom": "Frequent urination, excessive thirst",
+    "diagnosis": "Diabetes Mellitus",
+    "solution": "Maintain a healthy diet, monitor blood sugar, take medications as prescribed, and regular check-ups.",
+    "doctors": [
+      {
+        "name": "Dr. Suresh Kumar",
+        "specialization": "Endocrinologist",
+        "clinic": "Diabetes Care Center",
+        "contact": "080-89012345",
+        "address": "Electronic City, Bengaluru, Karnataka",
+        "lat": 12.8395,
+        "lon": 77.6770
+      }
+    ]
+  },
+  {
+    "symptom": "Shortness of breath, wheezing",
+    "diagnosis": "Asthma",
+    "solution": "Avoid triggers, use inhalers as prescribed, and seek medical help for attacks.",
+    "doctors": [
+      {
+        "name": "Dr. Ritu Sharma",
+        "specialization": "Pulmonologist",
+        "clinic": "Breathe Easy Clinic",
+        "contact": "080-90123456",
+        "address": "Koramangala, Bengaluru, Karnataka",
+        "lat": 12.9352,
+        "lon": 77.6142
+      }
+    ]
+  },
+  {
+    "symptom": "Skin rash and itching",
+    "diagnosis": "Allergic Reaction",
+    "solution": "Avoid allergens, take antihistamines, apply soothing creams, and consult a dermatologist if severe.",
+    "doctors": [
+      {
+        "name": "Dr. Meena Gupta",
+        "specialization": "Dermatologist",
+        "clinic": "Skin Care Center",
+        "contact": "080-91234567",
+        "address": "Malleshwaram, Bengaluru, Karnataka",
+        "lat": 12.9876,
+        "lon": 77.5710
+      }
+    ]
+  },
+  {
+    "symptom": "Persistent cough with mucus",
+    "diagnosis": "Bronchitis",
+    "solution": "Rest, stay hydrated, avoid smoking, take prescribed cough medicine, and see a doctor if symptoms last more than 3 weeks.",
+    "doctors": [
+      {
+        "name": "Dr. Sanjay Patel",
+        "specialization": "Pulmonologist",
+        "clinic": "Lung Care Clinic",
+        "contact": "080-92345678",
+        "address": "Jayanagar, Bengaluru, Karnataka",
+        "lat": 12.9250,
+        "lon": 77.5938
+      }
+    ]
+  },
+  {
+    "symptom": "Severe stomach pain",
+    "diagnosis": "Appendicitis",
+    "solution": "Seek immediate medical attention; surgery may be required.",
+    "doctors": [
+      {
+        "name": "Dr. Arjun Rao",
+        "specialization": "Surgeon",
+        "clinic": "Apollo Hospital",
+        "contact": "080-93456789",
+        "address": "Bannerghatta Road, Bengaluru, Karnataka",
+        "lat": 12.8950,
+        "lon": 77.5900
+      }
+    ]
+  },
+  {
+    "symptom": "Weight loss, frequent urination",
+    "diagnosis": "Type 1 Diabetes",
+    "solution": "Insulin therapy, blood sugar monitoring, healthy diet, and regular doctor visits.",
+    "doctors": [
+      {
+        "name": "Dr. Kavitha Menon",
+        "specialization": "Endocrinologist",
+        "clinic": "Diabetes Clinic",
+        "contact": "080-94567890",
+        "address": "Whitefield, Bengaluru, Karnataka",
+        "lat": 12.9719,
+        "lon": 77.7499
+      }
+    ]
+  },
+  {
+    "symptom": "Painful urination, fever",
+    "diagnosis": "Urinary Tract Infection (UTI)",
+    "solution": "Drink plenty of water, take prescribed antibiotics, and consult a doctor for follow-up.",
+    "doctors": [
+      {
+        "name": "Dr. Lakshmi Narayan",
+        "specialization": "Urologist",
+        "clinic": "City Urology Center",
+        "contact": "080-95678901",
+        "address": "Indiranagar, Bengaluru, Karnataka",
+        "lat": 12.9718,
+        "lon": 77.6413
+      }
+    ]
+  },
+  {
+    "symptom": "Muscle weakness and cramps",
+    "diagnosis": "Electrolyte Imbalance",
+    "solution": "Maintain hydration with electrolyte-rich fluids, balanced diet, and seek medical advice if persistent.",
+    "doctors": [
+      {
+        "name": "Dr. Mohan Kumar",
+        "specialization": "General Physician",
+        "clinic": "Health Plus Clinic",
+        "contact": "080-96789012",
+        "address": "HSR Layout, Bengaluru, Karnataka",
+        "lat": 12.9114,
+        "lon": 77.6413
+      }
+    ]
+  },
+  {
+    "symptom": "Difficulty swallowing",
+    "diagnosis": "Esophageal Stricture",
+    "solution": "Consult a gastroenterologist for evaluation and possible treatment like dilation.",
+    "doctors": [
+      {
+        "name": "Dr. Nisha Verma",
+        "specialization": "Gastroenterologist",
+        "clinic": "Digestive Health Clinic",
+        "contact": "080-97890123",
+        "address": "Koramangala, Bengaluru, Karnataka",
+        "lat": 12.9352,
+        "lon": 77.6142
+      }
+    ]
+  },
+  {
+    "symptom": "Blurred vision, eye pain",
+    "diagnosis": "Glaucoma",
+    "solution": "Immediate consultation with an ophthalmologist; treatment may include eye drops or surgery.",
+    "doctors": [
+      {
+        "name": "Dr. Ramesh Iyer",
+        "specialization": "Ophthalmologist",
+        "clinic": "Vision Care Center",
+        "contact": "080-98901234",
+        "address": "MG Road, Bengaluru, Karnataka",
+        "lat": 12.9753,
+        "lon": 77.6051
+      }
+    ]
+  },
+  {
+    "symptom": "Severe joint pain and stiffness",
+    "diagnosis": "Rheumatoid Arthritis",
+    "solution": "Take prescribed disease-modifying medications, physical therapy, and regular rheumatologist visits.",
+    "doctors": [
+      {
+        "name": "Dr. Anil Mehta",
+        "specialization": "Rheumatologist",
+        "clinic": "Joint Care Clinic",
+        "contact": "080-67890123",
+        "address": "HSR Layout, Bengaluru, Karnataka",
+        "lat": 12.9114,
+        "lon": 77.6413
+      }
+    ]
+  },
+  {
+    "symptom": "Frequent headaches with vision changes",
+    "diagnosis": "Brain Tumor",
+    "solution": "Urgent neurological evaluation and imaging; treatment varies based on tumor type.",
+    "doctors": [
+      {
+        "name": "Dr. Ajay Kumar",
+        "specialization": "Neurologist",
+        "clinic": "Brain & Spine Center",
+        "contact": "080-98765432",
+        "address": "Koramangala, Bengaluru, Karnataka",
+        "lat": 12.9332,
+        "lon": 77.6150
+      }
+    ]
+  },
+  {
+    "symptom": "Unexplained weight gain",
+    "diagnosis": "Hypothyroidism",
+    "solution": "Take prescribed thyroid hormone replacement and regular thyroid function tests.",
+    "doctors": [
+      {
+        "name": "Dr. Suresh Kumar",
+        "specialization": "Endocrinologist",
+        "clinic": "Diabetes Care Center",
+        "contact": "080-89012345",
+        "address": "Electronic City, Bengaluru, Karnataka",
+        "lat": 12.8395,
+        "lon": 77.6770
+      }
+    ]
+  },
+  {
+    "symptom": "Nasal congestion and sneezing",
+    "diagnosis": "Allergic Rhinitis",
+    "solution": "Avoid allergens, use antihistamines or nasal sprays as prescribed, and consult an allergist if needed.",
+    "doctors": [
+      {
+        "name": "Dr. Meena Gupta",
+        "specialization": "Allergist",
+        "clinic": "Allergy Care Center",
+        "contact": "080-91234567",
+        "address": "Malleshwaram, Bengaluru, Karnataka",
+        "lat": 12.9876,
+        "lon": 77.5710
+      }
+    ]
+  },
+  {
+    "symptom": "Severe diarrhea with dehydration",
+    "diagnosis": "Cholera",
+    "solution": "Immediate hospitalization, IV fluids, and antibiotics as prescribed.",
+    "doctors": [
+      {
+        "name": "Dr. Neha Singh",
+        "specialization": "Infectious Disease Specialist",
+        "clinic": "City Hospital",
+        "contact": "080-56789012",
+        "address": "Jayanagar, Bengaluru, Karnataka",
+        "lat": 12.9250,
+        "lon": 77.5938
+      }
+    ]
+  },
+  {
+    "symptom": "Sudden weakness on one side of the body",
+    "diagnosis": "Stroke",
+    "solution": "Call emergency services immediately; rapid treatment is critical.",
+    "doctors": [
+      {
+        "name": "Dr. Rajesh Kumar",
+        "specialization": "Neurologist",
+        "clinic": "City Neuro Clinic",
+        "contact": "080-45678901",
+        "address": "MG Road, Bengaluru, Karnataka",
+        "lat": 12.9753,
+        "lon": 77.6051
+      }
+    ]
+  },
+  {
+    "symptom": "Dry cough and night sweats",
+    "diagnosis": "Tuberculosis",
+    "solution": "Take prescribed antibiotics for the full course and follow-up with your doctor regularly.",
+    "doctors": [
+      {
+        "name": "Dr. Sanjay Patel",
+        "specialization": "Pulmonologist",
+        "clinic": "Lung Care Clinic",
+        "contact": "080-92345678",
+        "address": "Jayanagar, Bengaluru, Karnataka",
+        "lat": 12.9250,
+        "lon": 77.5938
+      }
+    ]
+  },
+  {
+    "symptom": "Swollen lymph nodes",
+    "diagnosis": "Infection or Lymphoma",
+    "solution": "Consult a doctor for diagnosis; treatment depends on cause.",
+    "doctors": [
+      {
+        "name": "Dr. Kavitha Menon",
+        "specialization": "Oncologist",
+        "clinic": "Cancer Care Center",
+        "contact": "080-94567890",
+        "address": "Whitefield, Bengaluru, Karnataka",
+        "lat": 12.9719,
+        "lon": 77.7499
+      }
+    ]
+  },
+  {
+    "symptom": "Chest tightness and cough",
+    "diagnosis": "Chronic Obstructive Pulmonary Disease (COPD)",
+    "solution": "Avoid smoking, use inhalers as prescribed, and attend pulmonary rehabilitation.",
+    "doctors": [
+      {
+        "name": "Dr. Ritu Sharma",
+        "specialization": "Pulmonologist",
+        "clinic": "Breathe Easy Clinic",
+        "contact": "080-90123456",
+        "address": "Koramangala, Bengaluru, Karnataka",
+        "lat": 12.9352,
+        "lon": 77.6142
+      }
+    ]
+  },
+  {
+    "symptom": "Excessive hair loss",
+    "diagnosis": "Alopecia",
+    "solution": "Use prescribed topical treatments, maintain a balanced diet, and consult a dermatologist.",
+    "doctors": [
+      {
+        "name": "Dr. Meena Gupta",
+        "specialization": "Dermatologist",
+        "clinic": "Skin Care Center",
+        "contact": "080-91234567",
+        "address": "Malleshwaram, Bengaluru, Karnataka",
+        "lat": 12.9876,
+        "lon": 77.5710
+      }
+    ]
+  },
+  {
+    "symptom": "Swollen and painful throat",
+    "diagnosis": "Tonsillitis",
+    "solution": "Rest, warm fluids, pain relievers, and antibiotics if bacterial infection is confirmed.",
+    "doctors": [
+      {
+        "name": "Dr. Arjun Rao",
+        "specialization": "ENT Specialist",
+        "clinic": "Apollo Hospital",
+        "contact": "080-93456789",
+        "address": "Bannerghatta Road, Bengaluru, Karnataka",
+        "lat": 12.8950,
+        "lon": 77.5900
+      }
+    ]
+  },
+  {
+    "symptom": "Difficulty sleeping",
+    "diagnosis": "Insomnia",
+    "solution": "Maintain a sleep routine, avoid caffeine before bedtime, and consult a specialist if chronic.",
+    "doctors": [
+      {
+        "name": "Dr. Kavita Rao",
+        "specialization": "Psychiatrist",
+        "clinic": "Mind Care Clinic",
+        "contact": "080-34567890",
+        "address": "Indiranagar, Bengaluru, Karnataka",
+        "lat": 12.9718,
+        "lon": 77.6413
+      }
+    ]
+  },
+  {
+    "symptom": "Persistent sadness and lack of interest",
+    "diagnosis": "Depression",
+    "solution": "Seek psychological counseling and consider medication under doctor supervision.",
+    "doctors": [
+      {
+        "name": "Dr. Kavita Rao",
+        "specialization": "Psychiatrist",
+        "clinic": "Mind Care Clinic",
+        "contact": "080-34567890",
+        "address": "Indiranagar, Bengaluru, Karnataka",
+        "lat": 12.9718,
+        "lon": 77.6413
+      }
+    ]
+  },
+  {
+    "symptom": "Frequent urination and excessive thirst",
+    "diagnosis": "Diabetes Mellitus",
+    "solution": "Monitor blood sugar levels regularly, follow a diabetic diet, take prescribed medications, and exercise regularly.",
+    "doctors": [
+      {
+        "name": "Dr. Kavitha Menon",
+        "specialization": "Endocrinologist",
+        "clinic": "Diabetes Clinic",
+        "contact": "080-94567890",
+        "address": "Whitefield, Bengaluru, Karnataka",
+        "lat": 12.9719,
+        "lon": 77.7499
+      }
+    ]
+  },
+  {
+    "symptom": "Severe lower back pain",
+    "diagnosis": "Sciatica",
+    "solution": "Physical therapy, pain relief medications, and avoiding heavy lifting. Consult a neurologist if persistent.",
+    "doctors": [
+      {
+        "name": "Dr. Ajay Kumar",
+        "specialization": "Neurologist",
+        "clinic": "Brain & Spine Center",
+        "contact": "080-98765432",
+        "address": "Koramangala, Bengaluru, Karnataka",
+        "lat": 12.9332,
+        "lon": 77.6150
+      }
+    ]
+  },
+  {
+    "symptom": "Yellowing of skin and eyes",
+    "diagnosis": "Jaundice",
+    "solution": "Consult a hepatologist immediately; treatment depends on the underlying cause.",
+    "doctors": [
+      {
+        "name": "Dr. Sanjay Patel",
+        "specialization": "Hepatologist",
+        "clinic": "Liver Care Clinic",
+        "contact": "080-92345678",
+        "address": "Jayanagar, Bengaluru, Karnataka",
+        "lat": 12.9250,
+        "lon": 77.5938
+      }
+    ]
+  },
+  {
+    "symptom": "Difficulty breathing and wheezing",
+    "diagnosis": "Asthma",
+    "solution": "Use inhalers as prescribed, avoid triggers, and seek emergency help if severe.",
+    "doctors": [
+      {
+        "name": "Dr. Ritu Sharma",
+        "specialization": "Pulmonologist",
+        "clinic": "Breathe Easy Clinic",
+        "contact": "080-90123456",
+        "address": "Koramangala, Bengaluru, Karnataka",
+        "lat": 12.9352,
+        "lon": 77.6142
+      }
+    ]
+  },
+  {
+    "symptom": "Sudden chest pain radiating to left arm",
+    "diagnosis": "Heart Attack",
+    "solution": "Call emergency services immediately. Do not ignore symptoms.",
+    "doctors": [
+      {
+        "name": "Dr. Vivek Patil",
+        "specialization": "Cardiologist",
+        "clinic": "Heart Care Hospital",
+        "contact": "080-23456789",
+        "address": "Koramangala, Bengaluru, Karnataka",
+        "lat": 12.9352,
+        "lon": 77.6142
+      }
+    ]
+  },
+  {
+    "symptom": "Red, itchy skin rash",
+    "diagnosis": "Eczema",
+    "solution": "Keep skin moisturized, avoid irritants, and use prescribed topical steroids or creams.",
+    "doctors": [
+      {
+        "name": "Dr. Meena Gupta",
+        "specialization": "Dermatologist",
+        "clinic": "Skin Care Center",
+        "contact": "080-91234567",
+        "address": "Malleshwaram, Bengaluru, Karnataka",
+        "lat": 12.9876,
+        "lon": 77.5710
+      }
+    ]
+  },
+  {
+    "symptom": "Swollen, painful feet and ankles",
+    "diagnosis": "Edema",
+    "solution": "Elevate legs, reduce salt intake, and consult a doctor to check for underlying causes.",
+    "doctors": [
+      {
+        "name": "Dr. Mohan Kumar",
+        "specialization": "General Physician",
+        "clinic": "Health Plus Clinic",
+        "contact": "080-96789012",
+        "address": "HSR Layout, Bengaluru, Karnataka",
+        "lat": 12.9114,
+        "lon": 77.6413
+      }
+    ]
+  },
+  {
+    "symptom": "Sudden severe headache",
+    "diagnosis": "Migraine",
+    "solution": "Take prescribed pain relievers, avoid triggers, and rest in a quiet, dark room.",
+    "doctors": [
+      {
+        "name": "Dr. Ajay Kumar",
+        "specialization": "Neurologist",
+        "clinic": "Brain & Spine Center",
+        "contact": "080-98765432",
+        "address": "Koramangala, Bengaluru, Karnataka",
+        "lat": 12.9332,
+        "lon": 77.6150
+      }
+    ]
+  },
+  {
+    "symptom": "Difficulty speaking and confusion",
+    "diagnosis": "Stroke",
+    "solution": "Seek emergency medical care immediately for better recovery outcomes.",
+    "doctors": [
+      {
+        "name": "Dr. Rajesh Kumar",
+        "specialization": "Neurologist",
+        "clinic": "City Neuro Clinic",
+        "contact": "080-45678901",
+        "address": "MG Road, Bengaluru, Karnataka",
+        "lat": 12.9753,
+        "lon": 77.6051
+      }
+    ]
+  },
+  {
+    "symptom": "Excessive fatigue",
+    "diagnosis": "Anemia",
+    "solution": "Eat iron-rich foods, take iron supplements if prescribed, and consult your doctor for tests.",
+    "doctors": [
+      {
+        "name": "Dr. Ramesh Sharma",
+        "specialization": "General Physician",
+        "clinic": "Sharma Health Clinic",
+        "contact": "080-12345678",
+        "address": "MG Road, Bengaluru, Karnataka",
+        "lat": 12.9716,
+        "lon": 77.5946
+      }
+    ]
+  },
+  {
+    "symptom": "Frequent urination and excessive thirst",
+    "diagnosis": "Diabetes Mellitus",
+    "solution": "Monitor blood sugar levels regularly, follow a diabetic diet, take prescribed medications, and exercise regularly.",
+    "doctors": [
+      {
+        "name": "Dr. Kavitha Menon",
+        "specialization": "Endocrinologist",
+        "clinic": "Diabetes Clinic",
+        "contact": "080-94567890",
+        "address": "Whitefield, Bengaluru, Karnataka",
+        "lat": 12.9719,
+        "lon": 77.7499
+      }
+    ]
+  },
+  {
+    "symptom": "Severe lower back pain",
+    "diagnosis": "Sciatica",
+    "solution": "Physical therapy, pain relief medications, and avoiding heavy lifting. Consult a neurologist if persistent.",
+    "doctors": [
+      {
+        "name": "Dr. Ajay Kumar",
+        "specialization": "Neurologist",
+        "clinic": "Brain & Spine Center",
+        "contact": "080-98765432",
+        "address": "Koramangala, Bengaluru, Karnataka",
+        "lat": 12.9332,
+        "lon": 77.6150
+      }
+    ]
+  },
+  {
+    "symptom": "Yellowing of skin and eyes",
+    "diagnosis": "Jaundice",
+    "solution": "Consult a hepatologist immediately; treatment depends on the underlying cause.",
+    "doctors": [
+      {
+        "name": "Dr. Sanjay Patel",
+        "specialization": "Hepatologist",
+        "clinic": "Liver Care Clinic",
+        "contact": "080-92345678",
+        "address": "Jayanagar, Bengaluru, Karnataka",
+        "lat": 12.9250,
+        "lon": 77.5938
+      }
+    ]
+  },
+  {
+    "symptom": "Difficulty breathing and wheezing",
+    "diagnosis": "Asthma",
+    "solution": "Use inhalers as prescribed, avoid triggers, and seek emergency help if severe.",
+    "doctors": [
+      {
+        "name": "Dr. Ritu Sharma",
+        "specialization": "Pulmonologist",
+        "clinic": "Breathe Easy Clinic",
+        "contact": "080-90123456",
+        "address": "Koramangala, Bengaluru, Karnataka",
+        "lat": 12.9352,
+        "lon": 77.6142
+      }
+    ]
+  },
+  {
+    "symptom": "Sudden chest pain radiating to left arm",
+    "diagnosis": "Heart Attack",
+    "solution": "Call emergency services immediately. Do not ignore symptoms.",
+    "doctors": [
+      {
+        "name": "Dr. Vivek Patil",
+        "specialization": "Cardiologist",
+        "clinic": "Heart Care Hospital",
+        "contact": "080-23456789",
+        "address": "Koramangala, Bengaluru, Karnataka",
+        "lat": 12.9352,
+        "lon": 77.6142
+      }
+    ]
+  },
+  {
+    "symptom": "Red, itchy skin rash",
+    "diagnosis": "Eczema",
+    "solution": "Keep skin moisturized, avoid irritants, and use prescribed topical steroids or creams.",
+    "doctors": [
+      {
+        "name": "Dr. Meena Gupta",
+        "specialization": "Dermatologist",
+        "clinic": "Skin Care Center",
+        "contact": "080-91234567",
+        "address": "Malleshwaram, Bengaluru, Karnataka",
+        "lat": 12.9876,
+        "lon": 77.5710
+      }
+    ]
+  },
+  {
+    "symptom": "Swollen, painful feet and ankles",
+    "diagnosis": "Edema",
+    "solution": "Elevate legs, reduce salt intake, and consult a doctor to check for underlying causes.",
+    "doctors": [
+      {
+        "name": "Dr. Mohan Kumar",
+        "specialization": "General Physician",
+        "clinic": "Health Plus Clinic",
+        "contact": "080-96789012",
+        "address": "HSR Layout, Bengaluru, Karnataka",
+        "lat": 12.9114,
+        "lon": 77.6413
+      }
+    ]
+  },
+  {
+    "symptom": "Sudden severe headache",
+    "diagnosis": "Migraine",
+    "solution": "Take prescribed pain relievers, avoid triggers, and rest in a quiet, dark room.",
+    "doctors": [
+      {
+        "name": "Dr. Ajay Kumar",
+        "specialization": "Neurologist",
+        "clinic": "Brain & Spine Center",
+        "contact": "080-98765432",
+        "address": "Koramangala, Bengaluru, Karnataka",
+        "lat": 12.9332,
+        "lon": 77.6150
+      }
+    ]
+  },
+  {
+    "symptom": "Difficulty speaking and confusion",
+    "diagnosis": "Stroke",
+    "solution": "Seek emergency medical care immediately for better recovery outcomes.",
+    "doctors": [
+      {
+        "name": "Dr. Rajesh Kumar",
+        "specialization": "Neurologist",
+        "clinic": "City Neuro Clinic",
+        "contact": "080-45678901",
+        "address": "MG Road, Bengaluru, Karnataka",
+        "lat": 12.9753,
+        "lon": 77.6051
+      }
+    ]
+  },
+  {
+    "symptom": "Excessive fatigue",
+    "diagnosis": "Anemia",
+    "solution": "Eat iron-rich foods, take iron supplements if prescribed, and consult your doctor for tests.",
+    "doctors": [
+      {
+        "name": "Dr. Ramesh Sharma",
+        "specialization": "General Physician",
+        "clinic": "Sharma Health Clinic",
+        "contact": "080-12345678",
+        "address": "MG Road, Bengaluru, Karnataka",
+        "lat": 12.9716,
+        "lon": 77.5946
+      }
+    ]
+  },
+  {
+    "symptom": "Persistent abdominal pain",
+    "diagnosis": "Gastritis",
+    "solution": "Avoid spicy and acidic foods, take antacids as prescribed, and consult your gastroenterologist for tests.",
+    "doctors": [
+      {
+        "name": "Dr. Priya Sharma",
+        "specialization": "Gastroenterologist",
+        "clinic": "Digestive Health Clinic",
+        "contact": "080-98765431",
+        "address": "Jayanagar, Bengaluru, Karnataka",
+        "lat": 12.9250,
+        "lon": 77.5938
+      }
+    ]
+  },
+  {
+    "symptom": "Unintentional weight loss",
+    "diagnosis": "Hyperthyroidism",
+    "solution": "Get thyroid function tests, follow prescribed medication, and regularly consult your endocrinologist.",
+    "doctors": [
+      {
+        "name": "Dr. Kavitha Menon",
+        "specialization": "Endocrinologist",
+        "clinic": "Thyroid Care Center",
+        "contact": "080-94567891",
+        "address": "Whitefield, Bengaluru, Karnataka",
+        "lat": 12.9719,
+        "lon": 77.7499
+      }
+    ]
+  },
+  {
+    "symptom": "Blurred vision",
+    "diagnosis": "Cataract",
+    "solution": "Consult an ophthalmologist for diagnosis and possible surgery options.",
+    "doctors": [
+      {
+        "name": "Dr. Anil Kumar",
+        "specialization": "Ophthalmologist",
+        "clinic": "Eye Care Clinic",
+        "contact": "080-91234568",
+        "address": "Koramangala, Bengaluru, Karnataka",
+        "lat": 12.9352,
+        "lon": 77.6142
+      }
+    ]
+  },
+  {
+    "symptom": "Painful urination",
+    "diagnosis": "Urinary Tract Infection (UTI)",
+    "solution": "Drink plenty of fluids and complete the full course of prescribed antibiotics.",
+    "doctors": [
+      {
+        "name": "Dr. Ramesh Sharma",
+        "specialization": "General Physician",
+        "clinic": "Sharma Health Clinic",
+        "contact": "080-12345678",
+        "address": "MG Road, Bengaluru, Karnataka",
+        "lat": 12.9716,
+        "lon": 77.5946
+      }
+    ]
+  },
+  {
+    "symptom": "Joint pain and stiffness",
+    "diagnosis": "Arthritis",
+    "solution": "Regular exercise, anti-inflammatory medications, and physical therapy as prescribed.",
+    "doctors": [
+      {
+        "name": "Dr. Neha Singh",
+        "specialization": "Rheumatologist",
+        "clinic": "Joint Care Clinic",
+        "contact": "080-56789012",
+        "address": "Jayanagar, Bengaluru, Karnataka",
+        "lat": 12.9250,
+        "lon": 77.5938
+      }
+    ]
+  },
+  {
+    "symptom": "Frequent headaches and dizziness",
+    "diagnosis": "Hypertension",
+    "solution": "Monitor blood pressure regularly, take medication, reduce salt intake, and maintain a healthy lifestyle.",
+    "doctors": [
+      {
+        "name": "Dr. Vivek Patil",
+        "specialization": "Cardiologist",
+        "clinic": "Heart Care Hospital",
+        "contact": "080-23456789",
+        "address": "Koramangala, Bengaluru, Karnataka",
+        "lat": 12.9352,
+        "lon": 77.6142
+      }
+    ]
+  },
+  {
+    "symptom": "Sudden weight gain and puffiness",
+    "diagnosis": "Hypothyroidism",
+    "solution": "Take prescribed thyroid hormone replacement therapy and regular monitoring.",
+    "doctors": [
+      {
+        "name": "Dr. Kavitha Menon",
+        "specialization": "Endocrinologist",
+        "clinic": "Thyroid Care Center",
+        "contact": "080-94567890",
+        "address": "Whitefield, Bengaluru, Karnataka",
+        "lat": 12.9719,
+        "lon": 77.7499
+      }
+    ]
+  },
+  {
+    "symptom": "Frequent mood swings",
+    "diagnosis": "Bipolar Disorder",
+    "solution": "Psychiatric evaluation, medication, and psychotherapy are recommended.",
+    "doctors": [
+      {
+        "name": "Dr. Kavita Rao",
+        "specialization": "Psychiatrist",
+        "clinic": "Mind Care Clinic",
+        "contact": "080-34567890",
+        "address": "Indiranagar, Bengaluru, Karnataka",
+        "lat": 12.9718,
+        "lon": 77.6413
+      }
+    ]
+  },
+  {
+    "symptom": "Severe abdominal cramps",
+    "diagnosis": "Irritable Bowel Syndrome (IBS)",
+    "solution": "Dietary changes, stress management, and medication as advised by your gastroenterologist.",
+    "doctors": [
+      {
+        "name": "Dr. Priya Sharma",
+        "specialization": "Gastroenterologist",
+        "clinic": "Digestive Health Clinic",
+        "contact": "080-98765431",
+        "address": "Jayanagar, Bengaluru, Karnataka",
+        "lat": 12.9250,
+        "lon": 77.5938
+      }
+    ]
+  },
+  {
+    "symptom": "Unexplained fever lasting more than a week",
+    "diagnosis": "Infectious Disease",
+    "solution": "Immediate consultation, lab tests, and targeted treatment based on diagnosis.",
+    "doctors": [
+      {
+        "name": "Dr. Neha Singh",
+        "specialization": "Infectious Disease Specialist",
+        "clinic": "City Hospital",
+        "contact": "080-56789012",
+        "address": "Jayanagar, Bengaluru, Karnataka",
+        "lat": 12.9250,
+        "lon": 77.5938
+      }
+    ]
+  }
+]
+
+
+
+

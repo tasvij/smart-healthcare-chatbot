@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Healthcare Chatbot</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #d8b4f8, #e0c3fc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .chat-container {
+      background: #ffffffdd;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 25px;
+      padding: 30px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .chat-header {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #6a0572;
+      margin-bottom: 10px;
+      text-align: center;
+      position: relative;
+    }
+
+    .chat-header::before,
+    .chat-header::after {
+      content: '✦';
+      color: #a150c9;
+      font-size: 1.2em;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .chat-header::before {
+      left: -25px;
+    }
+
+    .chat-header::after {
+      right: -25px;
+    }
+
+    #chat-box {
+      width: 100%;
+      min-height: 200px;
+      max-height: 250px;
+      overflow-y: auto;
+      background: #f5e8fc;
+      border-radius: 15px;
+      padding: 15px;
+      margin-bottom: 10px;
+      scroll-behavior: smooth;
+    }
+
+    .message {
+      margin-bottom: 10px;
+      white-space: pre-wrap;
+      position: relative;
+    }
+
+    .user-message {
+      text-align: right;
+      color: #6a0572;
+      margin-bottom: 10px;
+      white-space: pre-wrap;
+    }
+
+    .bot-message {
+      text-align: left;
+      color: #4a4a4a;
+      margin-bottom: 10px;
+      white-space: pre-wrap;
+    }
+
+    .bot-msg.typing::after {
+      content: '|';
+      animation: blink 0.8s infinite;
+      position: absolute;
+      margin-left: 4px;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    #responseBox {
+      background: #f9f7fd;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 0.95em;
+      width: 100%;
+      margin-bottom: 10px;
+      min-height: 80px;
+      box-sizing: border-box;
+    }
+
+    .input-area {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+      margin-top: 15px;
+      position: relative;
+    }
+
+    #user-input {
+      flex: 1;
+      padding: 10px;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    .btn {
+      padding: 10px 15px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1em;
+      user-select: none;
+    }
+
+    #send-btn {
+      background-color: #e287d9;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    #send-btn:hover {
+      background-color: #d46bcf;
+    }
+
+    #mic-btn {
+      background-color: #e8c7f8;
+      transition: background-color 0.3s ease;
+    }
+    #mic-btn:hover {
+      background-color: #d1a5e7;
+    }
+
+    #history-btn {
+      background-color: #b5b3fb;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    #history-btn:hover {
+      background-color: #9998f8;
+    }
+
+    .suggestion-box {
+      background: #fff;
+      border: 1px solid #ccc;
+      position: absolute;
+      z-index: 10;
+      max-height: 120px;
+      overflow-y: auto;
+      width: calc(100% - 140px);
+      top: 40px;
+      left: 50px;
+      border-radius: 10px;
+      display: none;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      font-size: 0.95em;
+    }
+
+    .suggestion-box div {
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .suggestion-box div:hover {
+      background: #f0f0f0;
+    }
+
+    @media screen and (max-width: 500px) {
+      .input-area {
+        flex-direction: column;
+      }
+      #user-input {
+        width: 100%;
+      }
+      .suggestion-box {
+        width: 100%;
+        left: 0;
+        top: 40px;
+      }
+    }
+
+    /* History modal styles */
+    #historyModal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      max-width: 600px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      padding: 20px;
+      z-index: 100;
+      overflow-y: auto;
+      max-height: 80vh;
+    }
+
+    #historyModal h3 {
+      text-align: center;
+      color: #6a0572;
+      margin-top: 0;
+    }
+
+    #historyContent p, #historyContent ul {
+      margin: 5px 0;
+    }
+
+    #historyContent ul {
+      padding-left: 20px;
+    }
+
+    #historyModal button.close-btn {
+      margin-top: 15px;
+      background-color: #e287d9;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: bold;
+      font-size: 1em;
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+    #historyModal button.close-btn:hover {
+      background-color: #d46bcf;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">SMART HEALTHCARE CHATBOT</div>
+
+    <div id="chat-box"></div>
+    <div id="responseBox"></div>
+
+    <div class="input-area">
+      <button class="btn" id="mic-btn" title="Start voice input">🎤</button>
+      <input type="text" id="user-input" placeholder="Ask a question..." autocomplete="off" spellcheck="false" />
+      <div id="suggestions" class="suggestion-box"></div>
+      <button class="btn" id="send-btn" title="Send message">Send</button>
+      <button class="btn" id="history-btn" title="Show chat history">History</button>
+    </div>
+  </div>
+
+  <!-- Chat History Modal -->
+  <div id="historyModal">
+    <h3>Chat History</h3>
+    <div id="historyContent"></div>
+    <button class="close-btn" onclick="document.getElementById('historyModal').style.display='none'">Close</button>
+  </div>
+
+  <script>
+    const chatBox = document.getElementById('chat-box');
+    const userInput = document.getElementById('user-input');
+    const sendBtn = document.getElementById('send-btn');
+    const micBtn = document.getElementById('mic-btn');
+    const historyBtn = document.getElementById('history-btn');
+    const responseBox = document.getElementById('responseBox');
+    const suggestionsBox = document.getElementById('suggestions');
+    const historyModal = document.getElementById('historyModal');
+    const historyContent = document.getElementById('historyContent');
+
+    // Append message with typing animation for bot
+    function appendMessage(text, sender) {
+      const msgDiv = document.createElement('div');
+      msgDiv.classList.add('message', `${sender}-msg`);
+      if (sender === 'bot') {
+        msgDiv.classList.add('typing');
+        chatBox.appendChild(msgDiv);
+        typeText(msgDiv, text, () => msgDiv.classList.remove('typing'));
+      } else {
+        msgDiv.textContent = text;
+        chatBox.appendChild(msgDiv);
+      }
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    // Typing effect for bot response
+    function typeText(element, text, callback, i = 0) {
+      if (i < text.length) {
+        element.textContent += text.charAt(i);
+        setTimeout(() => typeText(element, text, callback, i + 1), 25);
+      } else {
+        callback && callback();
+      }
+    }
+
+    // Send button click event
+    sendBtn.addEventListener('click', () => {
+      const inputText = userInput.value.trim();
+      if (!inputText) {
+        alert("Please enter your symptoms!");
+        return;
+      }
+
+      appendMessage(inputText, 'user');
+      userInput.value = '';
+      suggestionsBox.style.display = 'none';
+      responseBox.innerHTML = "";  // Clear previous response
+
+      fetch('/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ symptoms: inputText })
+      })
+      .then(response => response.json())
+      .then(data => {
+        let doctorHTML = "";
+        if (data.doctors && data.doctors.length > 0) {
+          doctorHTML = "<h3>Recommended Doctors in Bangalore:</h3><ul>";
+          data.doctors.forEach(doc => {
+            doctorHTML += `
+              <li>
+                <strong>${doc.name}</strong><br>
+                ${doc.address}<br>
+                📞 <a href="tel:${doc.phone}">${doc.phone}</a>
+              </li>`;
+          });
+          doctorHTML += "</ul>";
+        }
+
+        const resultHTML = `
+          <p><strong>Diagnosis:</strong> ${data.diagnosis}</p>
+          <p><strong>Solution:</strong> ${data.solution}</p>
+          ${doctorHTML}
+        `;
+
+        appendMessage(data.diagnosis, 'bot');
+        responseBox.innerHTML = resultHTML;
+      })
+      .catch(() => {
+        appendMessage("Sorry, something went wrong. Please try again later.", 'bot');
+      });
+    });
+
+    // Voice input via Web Speech API
+    micBtn.addEventListener('click', () => {
+      if (!('webkitSpeechRecognition' in window || 'SpeechRecognition' in window)) {
+        alert("Speech recognition not supported in your browser.");
+        return;
+      }
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+
+      recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        userInput.value = transcript;
+        userInput.focus();
+      };
+      recognition.onerror = () => {
+        alert("Sorry, speech recognition failed. Please try again.");
+      };
+      recognition.start();
+    });
+
+    // Autocomplete suggestions logic
+    userInput.addEventListener('input', async () => {
+      const query = userInput.value.toLowerCase();
+
+      if (query.length < 2) {
+        suggestionsBox.style.display = 'none';
+        return;
+      }
+
+      try {
+        const response = await fetch('/symptoms');
+        const symptoms = await response.json();
+
+        const matches = symptoms.filter(s => s.toLowerCase().includes(query));
+        suggestionsBox.innerHTML = "";
+
+        if (matches.length > 0) {
+          matches.slice(0, 5).forEach(match => {
+            const div = document.createElement("div");
+            div.textContent = match;
+            div.onclick = () => {
+              userInput.value = match;
+              suggestionsBox.style.display = "none";
+              userInput.focus();
+            };
+            suggestionsBox.appendChild(div);
+          });
+          suggestionsBox.style.display = 'block';
+        } else {
+          suggestionsBox.style.display = 'none';
+        }
+      } catch (e) {
+        suggestionsBox.style.display = 'none';
+      }
+    });
+
+    // Hide suggestions on click outside input or suggestions
+    document.addEventListener('click', (e) => {
+      if (!userInput.contains(e.target) && !suggestionsBox.contains(e.target)) {
+        suggestionsBox.style.display = 'none';
+      }
+    });
+
+    // Show chat history modal
+    historyBtn.addEventListener('click', () => {
+      fetch('/history')
+      .then(res => res.json())
+      .then(data => {
+        if (!data || data.length === 0) {
+          historyContent.innerHTML = "<p>No chat history found.</p>";
+        } else {
+          historyContent.innerHTML = "";
+          data.forEach((chat, i) => {
+            historyContent.innerHTML += `
+              <p><strong>User:</strong> ${chat.user}</p>
+              <p><strong>Bot Diagnosis:</strong> ${chat.diagnosis}</p>
+              <p><strong>Solution:</strong> ${chat.solution}</p>
+              ${chat.doctors && chat.doctors.length > 0 ? `
+                <p><strong>Doctors:</strong></p>
+                <ul>${chat.doctors.map(doc => `<li>${doc.name} - ${doc.phone}</li>`).join('')}</ul>
+              ` : ""}
+              <hr />
+            `;
+          });
+        }
+        historyModal.style.display = 'block';
+      })
+      .catch(() => {
+        historyContent.innerHTML = "<p>Failed to fetch history.</p>";
+        historyModal.style.display = 'block';
+      });
+    });
+
+    // Optional: submit on Enter key
+    userInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        sendBtn.click();
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

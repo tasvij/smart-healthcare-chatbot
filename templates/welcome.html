@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome - Smart Healthcare Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>SMART HEALTHCARE CHATBOT</h1>
+    <div id="greeting">Welcome!</div>
+
+    <a href="/login" class="btn">Login</a>
+    <a href="/register" class="btn">Register</a>
+  </div>
+
+  <script>
+    const greeting = document.getElementById('greeting');
+    const hour = new Date().getHours();
+    if (hour < 12) {
+      greeting.textContent = 'Good Morning!';
+    } else if (hour < 17) {
+      greeting.textContent = 'Good Afternoon!';
+    } else {
+      greeting.textContent = 'Good Evening!';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Smart Healthcare Chatbot</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #d8b4f8, #e0c3fc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #ffffffdd;
+      width: 90%;
+      max-width: 450px;
+      border-radius: 25px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 1.8em;
+      color: #6a0572;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    h1::before,
+    h1::after {
+      content: '✦';
+      color: #a150c9;
+      font-size: 1.2em;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    h1::before { left: -25px; }
+    h1::after { right: -25px; }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      color: white;
+      background-color: #e287d9;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #cc6ec6;
+    }
+
+    .switch {
+      margin-top: 15px;
+      font-size: 0.9em;
+    }
+
+    .switch a {
+      color: #6a0572;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SMART HEALTHCARE CHATBOT</h1>
+    <form method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required><br>
+      <input type="password" name="password" placeholder="Enter your password" required><br>
+      <button class="btn" type="submit">Login</button>
+    </form>
+    <div class="switch">
+      Don't have an account? <a href="/register">Register here</a>
+    </div>
+  </div>
+</body>
+</html>

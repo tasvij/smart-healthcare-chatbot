@@ -1,11 +1,25 @@
+ HEAD,,,,,
 symptoms,diagnosis,solution,doctor_name,doctor_address,doctor_phone
-cold cough fever,Common Cold or Viral Infection,"Stay hydrated, rest, and take paracetamol if needed.",Dr. Priya Kumar,"City Clinic, Jayanagar, Bangalore",+91-9012345587
-headache nausea blurred vision,Possible Migraine,"Avoid triggers, take prescribed medications, rest in a dark room.",Dr. Sneha Rao,"Neurology Center, Whitefield, Bangalore",+91-9887766463
-stomach pain diarrhea vomiting,Food Poisoning,"Drink ORS, avoid solid foods, consult a physician.",Dr. Asha Reddy,"Apollo Clinic, BTM Layout, Bangalore",+91-9845012254
-chest pain shortness of breath sweating,Possible Heart Attack,Call emergency services immediately and take aspirin if not allergic.,Dr. Vinay Jain,"Fortis Hospital, Cunningham Road, Bangalore",+91-9011001009
-skin rash itching redness,Skin Allergy or Dermatitis,"Apply calamine lotion, avoid allergens, consult a dermatologist.",Dr. Meera Das,"DermaCare, HSR Layout, Bangalore",+91-9333445475
-sore throat difficulty swallowing,Throat Infection,"Gargle with warm salt water, stay hydrated, take lozenges.",Dr. Arvind Shah,"ENT Clinic, Koramangala, Bangalore",+91-9123456689
-frequent urination burning sensation,Urinary Tract Infection (UTI),"Drink plenty of water, take prescribed antibiotics.",Dr. Neha Mehta,"UroCare Hospital, Indiranagar, Bangalore",+91-9109876452
-back pain muscle stiffness,Muscle Strain or Sciatica,"Apply warm compress, take pain relievers, avoid lifting heavy objects.",Dr. Mohan Reddy,"Orthopedic Center, Yeshwanthpur, Bangalore",+91-9876543119
-fever chills fatigue body ache,Dengue Fever,"Take rest, stay hydrated, consult a doctor immediately.",Dr. Lakshmi Nair,"Infectious Disease Clinic, Marathahalli, Bangalore",+91-9011223253
-joint pain swelling morning stiffness,Rheumatoid Arthritis,"Consult a rheumatologist, take anti-inflammatory medications.",Dr. Rakesh Joshi,"Joint Care Clinic, Rajajinagar, Bangalore",+91-9876501143
+cold cough fever,Common Cold or Viral Infection,"Stay hydrated, rest, and take paracetamol if needed.",Dr. Priya Kumar,"City Clinic, Jayanagar, Bangalore",-9012345496
+headache nausea blurred vision,Possible Migraine,"Avoid triggers, take prescribed medications, rest in a dark room.",Dr. Sneha Rao,"Neurology Center, Whitefield, Bangalore",-9887766372
+stomach pain diarrhea vomiting,Food Poisoning,"Drink ORS, avoid solid foods, consult a physician.",Dr. Asha Reddy,"Apollo Clinic, BTM Layout, Bangalore",-9845012163
+chest pain shortness of breath sweating,Possible Heart Attack,Call emergency services immediately and take aspirin if not allergic.,Dr. Vinay Jain,"Fortis Hospital, Cunningham Road, Bangalore",-9011000918
+skin rash itching redness,Skin Allergy or Dermatitis,"Apply calamine lotion, avoid allergens, consult a dermatologist.",Dr. Meera Das,"DermaCare, HSR Layout, Bangalore",-9333445384
+sore throat difficulty swallowing,Throat Infection,"Gargle with warm salt water, stay hydrated, take lozenges.",Dr. Arvind Shah,"ENT Clinic, Koramangala, Bangalore",-9123456598
+frequent urination burning sensation,Urinary Tract Infection (UTI),"Drink plenty of water, take prescribed antibiotics.",Dr. Neha Mehta,"UroCare Hospital, Indiranagar, Bangalore",-9109876361
+back pain muscle stiffness,Muscle Strain or Sciatica,"Apply warm compress, take pain relievers, avoid lifting heavy objects.",Dr. Mohan Reddy,"Orthopedic Center, Yeshwanthpur, Bangalore",-9876543028
+fever chills fatigue body ache,Dengue Fever,"Take rest, stay hydrated, consult a doctor immediately.",Dr. Lakshmi Nair,"Infectious Disease Clinic, Marathahalli, Bangalore",-9011223162
+joint pain swelling morning stiffness,Rheumatoid Arthritis,"Consult a rheumatologist, take anti-inflammatory medications.",Dr. Rakesh Joshi,"Joint Care Clinic, Rajajinagar, Bangalore",-9876501052
+,,,,,
+symptoms,diagnosis,solution,doctor_name,doctor_address,doctor_phone
+cold cough fever,Common Cold or Viral Infection,"Stay hydrated, rest, and take paracetamol if needed.",Dr. Priya Kumar,"City Clinic, Jayanagar, Bangalore",-9012345496
+headache nausea blurred vision,Possible Migraine,"Avoid triggers, take prescribed medications, rest in a dark room.",Dr. Sneha Rao,"Neurology Center, Whitefield, Bangalore",-9887766372
+stomach pain diarrhea vomiting,Food Poisoning,"Drink ORS, avoid solid foods, consult a physician.",Dr. Asha Reddy,"Apollo Clinic, BTM Layout, Bangalore",-9845012163
+chest pain shortness of breath sweating,Possible Heart Attack,Call emergency services immediately and take aspirin if not allergic.,Dr. Vinay Jain,"Fortis Hospital, Cunningham Road, Bangalore",-9011000918
+skin rash itching redness,Skin Allergy or Dermatitis,"Apply calamine lotion, avoid allergens, consult a dermatologist.",Dr. Meera Das,"DermaCare, HSR Layout, Bangalore",-9333445384
+sore throat difficulty swallowing,Throat Infection,"Gargle with warm salt water, stay hydrated, take lozenges.",Dr. Arvind Shah,"ENT Clinic, Koramangala, Bangalore",-9123456598
+frequent urination burning sensation,Urinary Tract Infection (UTI),"Drink plenty of water, take prescribed antibiotics.",Dr. Neha Mehta,"UroCare Hospital, Indiranagar, Bangalore",-9109876361
+back pain muscle stiffness,Muscle Strain or Sciatica,"Apply warm compress, take pain relievers, avoid lifting heavy objects.",Dr. Mohan Reddy,"Orthopedic Center, Yeshwanthpur, Bangalore",-9876543028
+fever chills fatigue body ache,Dengue Fever,"Take rest, stay hydrated, consult a doctor immediately.",Dr. Lakshmi Nair,"Infectious Disease Clinic, Marathahalli, Bangalore",-9011223162
+joint pain swelling morning stiffness,Rheumatoid Arthritis,"Consult a rheumatologist, take anti-inflammatory medications.",Dr. Rakesh Joshi,"Joint Care Clinic, Rajajinagar, Bangalore",-9876501052
+f35ef1c (Add Procfile and updated files for render deployment),,,,,

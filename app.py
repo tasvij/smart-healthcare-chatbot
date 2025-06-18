@@ -25,10 +25,10 @@ CORS(app)
 # Configuration class
 class Config:
     SECRET_KEY = os.getenv('SECRET_KEY', 'dev-fallback-key')
-    MYSQL_HOST = os.getenv('MYSQL_HOST', 'localhost')
-    MYSQL_USER = os.getenv('MYSQL_USER', 'root')
-    MYSQL_PASSWORD = os.getenv('MYSQL_PASSWORD', '')
-    MYSQL_DB = os.getenv('MYSQL_DB', 'healthcare')
+    MYSQL_HOST = os.getenv('MYSQL_HOST')
+    MYSQL_USER = os.getenv('MYSQL_USER')
+    MYSQL_PASSWORD = os.getenv('MYSQL_PASSWORD')
+    MYSQL_DB = os.getenv('MYSQL_DB')
     MYSQL_PORT = int(os.getenv('MYSQL_PORT', 3306))
     RATE_LIMIT = os.getenv('RATE_LIMIT', "200 per day,50 per hour")
 

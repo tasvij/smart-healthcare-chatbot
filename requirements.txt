@@ -1,5 +1,3 @@
-HEAD
-HEAD
 anyio==4.9.0
 blinker==1.9.0
 certifi==2025.4.26
@@ -52,19 +50,4 @@ typing_extensions==4.14.0
 tzdata==2025.2
 urllib3==2.4.0
 Werkzeug==3.1.3
-HEAD
-HEAD
-blinker==1.9.0
-click==8.2.0
-colorama==0.4.6
-Flask==3.1.1
-itsdangerous==2.2.0
-Jinja2==3.1.6
-MarkupSafe==3.0.2
-Werkzeug==3.1.3
-f35ef1c (Add Procfile and updated files for render deployment)
-gunicorn==21.2.0
-
-a3db671 (Add gunicorn to requirements for deployment)
 wrapt==1.17.2
-32005eb (Fix: Add gunicorn properly to requirements.txt)

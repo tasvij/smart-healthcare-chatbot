@@ -1,7 +1,6 @@
 HEAD
 HEAD
 anyio==4.9.0
-32005eb (Fix: Add gunicorn properly to requirements.txt)
 blinker==1.9.0
 certifi==2025.4.26
 charset-normalizer==3.4.2

@@ -1,4 +1,3 @@
-HEAD
 import os
 import json
 import logging
@@ -987,5 +986,4 @@ if __name__ == "__main__":
     except Exception as loop_err:
         app.logger.error(f"❌ Event loop policy error: {str(loop_err)}")
 
-f35ef1c (Add Procfile and updated files for render deployment)
     app.run(debug=True)

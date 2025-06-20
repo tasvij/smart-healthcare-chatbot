@@ -371,6 +371,7 @@ def api_diagnose():
 
     best_match = None
     highest_score = 0
+    min_confidence = 60
 
     for symptom in medical_data.keys():
         score = fuzz.partial_ratio(normalized_input, symptom.lower())
@@ -378,7 +379,7 @@ def api_diagnose():
             highest_score = score
             best_match = symptom
 
-    if best_match and highest_score > 60:
+    if best_match and highest_score >= min_confidence:
         diagnosis_info = medical_data[best_match]
         diagnosis = diagnosis_info.get("diagnosis", "Diagnosis not available.")
         solution = diagnosis_info.get("solution", "No solution provided.")

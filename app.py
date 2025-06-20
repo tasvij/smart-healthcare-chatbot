@@ -410,9 +410,32 @@ def api_diagnose():
 
         save_chat_to_file(symptoms, json.dumps(response_json, indent=2))
         return jsonify(response_json)
-    else:
-        return jsonify({"error": "No matching symptom found."}), 404
+else:
+    fallback_response = {
+        "diagnosis": "Unable to find a reliable match.",
+        "solution": "Please consult a doctor for accurate diagnosis.",
+        "doctors": [],
+        "confidence": f"{highest_score}%"
+    }
 
+    if "chat_history" not in session:
+        session["chat_history"] = []
+
+    session["chat_history"].append({
+        "sender": "user",
+        "message": symptoms,
+        "timestamp": datetime.now().isoformat()
+    })
+    session["chat_history"].append({
+        "sender": "bot",
+        "message": fallback_response,
+        "timestamp": datetime.now().isoformat()
+    })
+    session.modified = True
+
+    save_chat_to_file(symptoms, json.dumps(fallback_response, indent=2))
+    return jsonify(fallback_response), 200
+    
 @app.route("/api/symptoms", methods=["GET"])
 def get_symptoms():
     return jsonify(list(medical_data.keys()))

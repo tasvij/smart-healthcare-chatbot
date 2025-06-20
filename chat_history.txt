@@ -1,0 +1,218 @@
+2025-06-18 23:50:34 - User: fever
+2025-06-18 23:50:34 - Bot: {
+  "diagnosis": "Urinary Tract Infection (UTI)",
+  "solution": "Drink plenty of water, take prescribed antibiotics, and consult a doctor for follow-up.",
+  "doctors": [
+    {
+      "name": "Dr. Lakshmi Narayan",
+      "specialization": "Urologist",
+      "clinic": "City Urology Center",
+      "contact": "080-95678901",
+      "address": "Indiranagar, Bengaluru, Karnataka",
+      "lat": 12.9718,
+      "lon": 77.6413
+    }
+  ],
+  "matched_symptom": "pyrexia",
+  "match_score": 100
+}
+
+2025-06-18 23:53:37 - User: i have fever and cough
+2025-06-18 23:53:37 - Bot: {
+  "diagnosis": "Bronchitis",
+  "solution": "Rest, stay hydrated, avoid smoking, take prescribed cough medicine, and see a doctor if symptoms last more than 3 weeks.",
+  "doctors": [
+    {
+      "name": "Dr. Sanjay Patel",
+      "specialization": "Pulmonologist",
+      "clinic": "Lung Care Clinic",
+      "contact": "080-92345678",
+      "address": "Jayanagar, Bengaluru, Karnataka",
+      "lat": 12.925,
+      "lon": 77.5938
+    }
+  ],
+  "matched_symptom": "cough",
+  "match_score": 100
+}
+
+2025-06-19 00:03:23 - User: fever
+2025-06-19 00:03:23 - Bot: {
+  "diagnosis": "Urinary Tract Infection (UTI)",
+  "solution": "Drink plenty of water, take prescribed antibiotics, and consult a doctor for follow-up.",
+  "doctors": [
+    {
+      "name": "Dr. Lakshmi Narayan",
+      "specialization": "Urologist",
+      "clinic": "City Urology Center",
+      "contact": "080-95678901",
+      "address": "Indiranagar, Bengaluru, Karnataka",
+      "lat": 12.9718,
+      "lon": 77.6413
+    }
+  ],
+  "matched_symptom": "pyrexia",
+  "match_score": 100
+}
+
+2025-06-19 00:03:48 - User: skin rash
+2025-06-19 00:03:48 - Bot: {
+  "diagnosis": "Allergic Reaction",
+  "solution": "Avoid allergens, take antihistamines, apply soothing creams, and consult a dermatologist if severe.",
+  "doctors": [
+    {
+      "name": "Dr. Meena Gupta",
+      "specialization": "Dermatologist",
+      "clinic": "Skin Care Center",
+      "contact": "080-91234567",
+      "address": "Malleshwaram, Bengaluru, Karnataka",
+      "lat": 12.9876,
+      "lon": 77.571
+    }
+  ],
+  "matched_symptom": "skin rash and itching",
+  "match_score": 100
+}
+
+2025-06-20 11:19:52 - User: fever
+2025-06-20 11:19:52 - Bot: {
+  "diagnosis": "Urinary Tract Infection (UTI)",
+  "solution": "Drink plenty of water, take prescribed antibiotics, and consult a doctor for follow-up.",
+  "doctors": [
+    {
+      "name": "Dr. Lakshmi Narayan",
+      "specialization": "Urologist",
+      "clinic": "City Urology Center",
+      "contact": "080-95678901",
+      "address": "Indiranagar, Bengaluru, Karnataka",
+      "lat": 12.9718,
+      "lon": 77.6413
+    }
+  ],
+  "matched_symptom": "pyrexia",
+  "match_score": 100
+}
+
+2025-06-20 11:20:11 - User: tummy ache
+2025-06-20 11:20:11 - Bot: {
+  "diagnosis": "Appendicitis",
+  "solution": "Seek immediate medical attention; surgery may be required.",
+  "doctors": [
+    {
+      "name": "Dr. Arjun Rao",
+      "specialization": "Surgeon",
+      "clinic": "Apollo Hospital",
+      "contact": "080-93456789",
+      "address": "Bannerghatta Road, Bengaluru, Karnataka",
+      "lat": 12.895,
+      "lon": 77.59
+    }
+  ],
+  "matched_symptom": "tum",
+  "match_score": 100
+}
+
+2025-06-20 15:46:29 - User: vomitting
+2025-06-20 15:46:29 - Bot: {
+  "diagnosis": "Infectious Disease",
+  "solution": "Immediate consultation, lab tests, and targeted treatment based on diagnosis.",
+  "doctors": [
+    {
+      "name": "Dr. Neha Singh",
+      "specialization": "Infectious Disease Specialist",
+      "clinic": "City Hospital",
+      "contact": "080-56789012",
+      "address": "Jayanagar, Bengaluru, Karnataka",
+      "lat": 12.925,
+      "lon": 77.5938
+    }
+  ],
+  "matched_symptom": "a",
+  "match_score": 100
+}
+
+2025-06-20 15:47:33 - User: send location 📍
+2025-06-20 15:47:33 - Bot: {
+  "diagnosis": "Stroke",
+  "solution": "Call emergency services immediately; rapid treatment is critical.",
+  "doctors": [
+    {
+      "name": "Dr. Rajesh Kumar",
+      "specialization": "Neurologist",
+      "clinic": "City Neuro Clinic",
+      "contact": "080-45678901",
+      "address": "MG Road, Bengaluru, Karnataka",
+      "lat": 12.9753,
+      "lon": 77.6051
+    }
+  ],
+  "matched_symptom": "on",
+  "match_score": 100
+}
+
+2025-06-20 22:10:37 - User: feverrr
+2025-06-20 22:10:37 - Bot: {
+  "diagnosis": "Stroke",
+  "solution": "Call emergency services immediately; rapid treatment is critical.",
+  "doctors": [
+    {
+      "name": "Dr. Rajesh Kumar",
+      "specialization": "Neurologist",
+      "clinic": "City Neuro Clinic",
+      "contact": "080-45678901",
+      "address": "MG Road, Bengaluru, Karnataka",
+      "lat": 12.9753,
+      "lon": 77.6051
+    }
+  ],
+  "matched_symptom": "on",
+  "match_score": 100
+}
+
+2025-06-20 22:10:54 - User: fever
+2025-06-20 22:10:54 - Bot: {
+  "diagnosis": "Urinary Tract Infection (UTI)",
+  "solution": "Drink plenty of water, take prescribed antibiotics, and consult a doctor for follow-up.",
+  "doctors": [
+    {
+      "name": "Dr. Lakshmi Narayan",
+      "specialization": "Urologist",
+      "clinic": "City Urology Center",
+      "contact": "080-95678901",
+      "address": "Indiranagar, Bengaluru, Karnataka",
+      "lat": 12.9718,
+      "lon": 77.6413
+    }
+  ],
+  "matched_symptom": "febricity",
+  "match_score": 100
+}
+
+2025-06-20 22:14:13 - User: cough
+2025-06-20 22:14:13 - Bot: {
+  "diagnosis": "Viral Infection",
+  "solution": "Rest well, drink plenty of fluids, take paracetamol for fever, and consult a doctor if symptoms worsen.",
+  "doctors": [
+    {
+      "name": "Dr. Vivek Patil",
+      "specialization": "General Physician",
+      "clinic": "Heart Care Hospital",
+      "contact": "080-23456789",
+      "address": "45 Koramangala, Bengaluru, Karnataka",
+      "lat": 12.9352,
+      "lon": 77.6142
+    },
+    {
+      "name": "Dr. Ajay Kumar",
+      "specialization": "Neurologist",
+      "clinic": "Brain & Spine Center",
+      "contact": "080-98765432",
+      "address": "Koramangala, Bengaluru, Karnataka",
+      "lat": 12.9332,
+      "lon": 77.615
+    }
+  ],
+  "matched_symptom": "fever, cough, sore throat",
+  "match_score": 100
+}
+

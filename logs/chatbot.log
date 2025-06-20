@@ -1,0 +1,2 @@
+2025-06-18 23:42:18,617 ERROR: Database error: (1054, "Unknown column 'created_at' in 'field list'") [in C:\Users\User\Downloads\smart-healthcare-chatbot\app.py:341]
+2025-06-18 23:44:31,575 ERROR: Database error: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`chatbot_db`.`chat_history`, CONSTRAINT `chat_history_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE)') [in C:\Users\User\Downloads\smart-healthcare-chatbot\app.py:341]

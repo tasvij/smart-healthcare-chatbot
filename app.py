@@ -369,17 +369,27 @@ def api_diagnose():
     synonym_map = generate_synonym_map(medical_data)
     normalized_input = normalize_with_synonyms(symptoms, synonym_map)
 
+    # Try typo correction before fuzzy matching
+    possible_matches = list(medical_data.keys())
+    closest = difflib.get_close_matches(normalized_input, possible_matches, n=1, cutoff=0.8)
+    if closest:
+    normalized_input = closest[0]
+
     best_match = None
     highest_score = 0
     min_confidence = 60
 
     for symptom in medical_data.keys():
-        score = fuzz.partial_ratio(normalized_input, symptom.lower())
+        score = fuzratio(normalized_input, symptom.lower())
         if score > highest_score:
             highest_score = score
             best_match = symptom
 
-    if best_match and highest_score >= min_confidence:
+   
+            "message": response_json,
+            "timestamp": datetime.now().isoformat()
+        })
+     if best_match and highest_score >= min_confidence:
         diagnosis_info = medical_data[best_match]
         diagnosis = diagnosis_info.get("diagnosis", "Diagnosis not available.")
         solution = diagnosis_info.get("solution", "No solution provided.")
@@ -390,7 +400,8 @@ def api_diagnose():
             "solution": solution,
             "doctors": doctors,
             "matched_symptom": best_match,
-            "match_score": highest_score
+            "match_score": highest_score,
+            "confidence": f"{highest_score}%"
         }
 
         if "chat_history" not in session:
@@ -410,32 +421,31 @@ def api_diagnose():
 
         save_chat_to_file(symptoms, json.dumps(response_json, indent=2))
         return jsonify(response_json)
-else:
-    fallback_response = {
-        "diagnosis": "Unable to find a reliable match.",
-        "solution": "Please consult a doctor for accurate diagnosis.",
-        "doctors": [],
-        "confidence": f"{highest_score}%"
-    }
+    else:
+        fallback_response = {
+            "diagnosis": "Unable to find a reliable match.",
+            "solution": "Please consult a doctor for accurate diagnosis.",
+            "doctors": [],
+            "confidence": f"{highest_score}%"
+        }
 
-    if "chat_history" not in session:
-        session["chat_history"] = []
+        if "chat_history" not in session:
+            session["chat_history"] = []
 
-    session["chat_history"].append({
-        "sender": "user",
-        "message": symptoms,
-        "timestamp": datetime.now().isoformat()
-    })
-    session["chat_history"].append({
-        "sender": "bot",
-        "message": fallback_response,
-        "timestamp": datetime.now().isoformat()
-    })
-    session.modified = True
+        session["chat_history"].append({
+            "sender": "user",
+            "message": symptoms,
+            "timestamp": datetime.now().isoformat()
+        })
+        session["chat_history"].append({
+            "sender": "bot",
+            "message": fallback_response,
+            "timestamp": datetime.now().isoformat()
+        })
+        session.modified = True
 
-    save_chat_to_file(symptoms, json.dumps(fallback_response, indent=2))
-    return jsonify(fallback_response), 200
-    
+        save_chat_to_file(symptoms, json.dumps(fallback_response, indent=2))
+        return jsonify(fallback_response), 200  
 @app.route("/api/symptoms", methods=["GET"])
 def get_symptoms():
     return jsonify(list(medical_data.keys()))

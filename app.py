@@ -388,7 +388,6 @@ def api_diagnose():
    
             "message": response_json,
             "timestamp": datetime.now().isoformat()
-        })
      if best_match and highest_score >= min_confidence:
         diagnosis_info = medical_data[best_match]
         diagnosis = diagnosis_info.get("diagnosis", "Diagnosis not available.")
